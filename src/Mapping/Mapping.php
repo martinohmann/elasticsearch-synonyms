@@ -10,8 +10,8 @@
 
 namespace mohmann\ElasticsearchSynonyms\Mapping;
 
-use mohmann\ElasticsearchSynonyms\Synonym;
 use mohmann\ElasticsearchSynonyms\Collection\SynonymCollection;
+use mohmann\ElasticsearchSynonyms\Synonym;
 
 class Mapping implements MappingInterface
 {

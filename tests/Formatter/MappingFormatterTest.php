@@ -10,11 +10,11 @@
 
 namespace mohmann\ElasticsearchSynonyms\Tests\Formatter;
 
-use PHPUnit\Framework\TestCase;
-use mohmann\ElasticsearchSynonyms\Synonym;
 use mohmann\ElasticsearchSynonyms\Collection\SynonymCollection;
 use mohmann\ElasticsearchSynonyms\Formatter\MappingFormatter;
 use mohmann\ElasticsearchSynonyms\Mapping\MappingInterface;
+use mohmann\ElasticsearchSynonyms\Synonym;
+use PHPUnit\Framework\TestCase;
 
 class MappingFormatterTest extends TestCase
 {

@@ -10,13 +10,13 @@
 
 namespace mohmann\ElasticsearchSynonyms;
 
+use mohmann\ElasticsearchSynonyms\Collection\MappingCollection;
+use mohmann\ElasticsearchSynonyms\Lexer;
+use mohmann\ElasticsearchSynonyms\Mapping\Mapping;
 use Yosymfony\ParserUtils\LexerInterface;
 use Yosymfony\ParserUtils\SyntaxErrorException;
-use Yosymfony\ParserUtils\TokenStream;
-use mohmann\ElasticsearchSynonyms\Collection\MappingCollection;
-use mohmann\ElasticsearchSynonyms\Mapping\Mapping;
-use mohmann\ElasticsearchSynonyms\Lexer;
 use Yosymfony\ParserUtils\Token;
+use Yosymfony\ParserUtils\TokenStream;
 use Yosymfony\ParserUtils\TokenStreamInterface;
 
 class Parser implements ParserInterface
@@ -118,9 +118,11 @@ class Parser implements ParserInterface
                     }
 
                     $this->setStep(self::STEP_REPLACEMENTS);
+
                     break;
                 case Lexer::T_COMMA:
                     $this->ensureSurroundedByWords($token, $stream);
+
                     break;
                 case Lexer::T_COMMENT:
                     $stream->skipWhileAny([
@@ -129,10 +131,12 @@ class Parser implements ParserInterface
                         Lexer::T_COMMENT,
                         Lexer::T_WORD,
                     ]);
+
                     break;
                 case Lexer::T_NEWLINE:
                     $this->collectMapping($collection);
                     $this->reset();
+
                     break;
                 case Lexer::T_WORD:
                     $synonym = $this->parseSynonym($token, $stream);
@@ -142,6 +146,7 @@ class Parser implements ParserInterface
                     } else {
                         $this->mapping->addSynonym($synonym);
                     }
+
                     break;
                 default:
                     throw new SyntaxErrorException('Unexpected token class.');

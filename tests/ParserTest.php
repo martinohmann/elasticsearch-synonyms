@@ -10,10 +10,10 @@
 
 namespace mohmann\ElasticsearchSynonyms\Tests;
 
-use PHPUnit\Framework\TestCase;
-use mohmann\ElasticsearchSynonyms\Parser;
-use mohmann\ElasticsearchSynonyms\Lexer;
 use mohmann\ElasticsearchSynonyms\Converter;
+use mohmann\ElasticsearchSynonyms\Lexer;
+use mohmann\ElasticsearchSynonyms\Parser;
+use PHPUnit\Framework\TestCase;
 use Yosymfony\ParserUtils\SyntaxErrorException;
 
 class ParserTest extends TestCase

@@ -10,12 +10,12 @@
 
 namespace mohmann\ElasticsearchSynonyms\Tests;
 
-use PHPUnit\Framework\TestCase;
 use mohmann\ElasticsearchSynonyms\Collection\MappingCollection;
 use mohmann\ElasticsearchSynonyms\Collection\SynonymCollection;
 use mohmann\ElasticsearchSynonyms\Converter;
 use mohmann\ElasticsearchSynonyms\Mapping\Mapping;
 use mohmann\ElasticsearchSynonyms\Synonym;
+use PHPUnit\Framework\TestCase;
 
 class ConverterTest extends TestCase
 {

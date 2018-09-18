@@ -10,8 +10,8 @@
 
 namespace mohmann\ElasticsearchSynonyms\Tests;
 
-use PHPUnit\Framework\TestCase;
 use mohmann\ElasticsearchSynonyms\Synonym;
+use PHPUnit\Framework\TestCase;
 
 class SynonymTest extends TestCase
 {

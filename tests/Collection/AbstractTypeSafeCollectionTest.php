@@ -10,9 +10,9 @@
 
 namespace mohmann\ElasticsearchSynonyms\Tests\Collection;
 
-use PHPUnit\Framework\TestCase;
 use mohmann\ElasticsearchSynonyms\Collection\AbstractTypeSafeCollection;
 use mohmann\ElasticsearchSynonyms\Tests\Collection\DummyCollection;
+use PHPUnit\Framework\TestCase;
 
 class AbstractTypeSafeCollectionTest extends TestCase
 {

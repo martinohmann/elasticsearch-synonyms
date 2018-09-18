@@ -10,8 +10,8 @@
 
 namespace mohmann\ElasticsearchSynonyms\Tests;
 
-use PHPUnit\Framework\TestCase;
 use mohmann\ElasticsearchSynonyms\Lexer;
+use PHPUnit\Framework\TestCase;
 
 class LexerTest extends TestCase
 {

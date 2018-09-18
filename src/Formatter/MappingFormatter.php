@@ -10,8 +10,8 @@
 
 namespace mohmann\ElasticsearchSynonyms\Formatter;
 
-use mohmann\ElasticsearchSynonyms\Mapping\MappingInterface;
 use mohmann\ElasticsearchSynonyms\Collection\SynonymCollection;
+use mohmann\ElasticsearchSynonyms\Mapping\MappingInterface;
 
 class MappingFormatter implements MappingFormatterInterface
 {

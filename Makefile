@@ -29,12 +29,12 @@ metrics: ## Collect metrics
 	vendor/bin/phpmetrics --report-html=./.metrics src
 
 .PHONY: fmt
-fmt: ## Apply PSR2 code style
-	vendor/bin/php-cs-fixer --rules=@PSR2 --verbose --show-progress=dots --path-mode=intersection --diff --using-cache=no fix .
+fmt: ## Apply code style
+	vendor/bin/php-cs-fixer --verbose --show-progress=dots --diff --using-cache=no fix
 
 .PHONY: cs
-cs: ## Check PSR2 code style
-	vendor/bin/php-cs-fixer --rules=@PSR2 --verbose --show-progress=dots --path-mode=intersection --diff --using-cache=no --dry-run fix .
+cs: ## Check code style
+	vendor/bin/php-cs-fixer --verbose --show-progress=dots --diff --using-cache=no --dry-run fix
 
 .PHONY: stan
 stan: ## Run phpstan with maximum checks

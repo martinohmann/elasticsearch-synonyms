@@ -10,9 +10,9 @@
 
 namespace mohmann\ElasticsearchSynonyms\Tests\Mapping;
 
-use PHPUnit\Framework\TestCase;
 use mohmann\ElasticsearchSynonyms\Mapping\Mapping;
 use mohmann\ElasticsearchSynonyms\Synonym;
+use PHPUnit\Framework\TestCase;
 
 class MappingTest extends TestCase
 {
