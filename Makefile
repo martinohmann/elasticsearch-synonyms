@@ -42,4 +42,4 @@ stan: ## Run phpstan with maximum checks
 
 .PHONY: inf
 inf: cov ## Throws infection into tests
-	phpdbg -qrr vendor/bin/infection --threads=$$(nproc) --coverage=.coverage --show-mutations --verbose
+	phpdbg -qrr vendor/bin/infection run --coverage=.coverage --show-mutations --verbose
