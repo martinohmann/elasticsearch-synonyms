@@ -15,8 +15,8 @@ use mohmann\ElasticsearchSynonyms\Mapping\MappingInterface;
 interface MappingFormatterInterface
 {
     /**
-     * @param MappingInterface $synonymMapping
-     * @return void
+     * @param MappingInterface $mapping
+     * @return string
      */
-    public function format(MappingInterface $synonymMapping): string;
+    public function format(MappingInterface $mapping): string;
 }
