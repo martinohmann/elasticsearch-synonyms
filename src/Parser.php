@@ -47,7 +47,7 @@ class Parser implements ParserInterface
     private $step;
 
     /**
-     * @var Token
+     * @var null|Token
      */
     private $previousToken;
 
